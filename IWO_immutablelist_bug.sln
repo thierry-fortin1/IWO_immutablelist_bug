@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32804.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "IWO_immutablelist_bug.Shared", "IWO_immutablelist_bug\IWO_immutablelist_bug.Shared\IWO_immutablelist_bug.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{E8B5F0B0-51FF-4EF4-9118-2E65155A3ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWO_immutablelist_bug.Mobile", "IWO_immutablelist_bug\IWO_immutablelist_bug.Mobile\IWO_immutablelist_bug.Mobile.csproj", "{085820C8-CAAB-46E0-93F2-17FB278B2876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IWO_immutablelist_bug.Windows", "IWO_immutablelist_bug\IWO_immutablelist_bug.Windows\IWO_immutablelist_bug.Windows.csproj", "{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|arm64.Build.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|arm64.Deploy.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|x64.Build.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|x86.Build.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|arm64.ActiveCfg = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|arm64.Build.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|arm64.Deploy.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|x64.ActiveCfg = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|x64.Build.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|x64.Deploy.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|x86.ActiveCfg = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|x86.Build.0 = Release|Any CPU
+		{085820C8-CAAB-46E0-93F2-17FB278B2876}.Release|x86.Deploy.0 = Release|Any CPU
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|Any CPU.Build.0 = Debug|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|arm64.ActiveCfg = Debug|arm64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|arm64.Build.0 = Debug|arm64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|arm64.Deploy.0 = Debug|arm64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|x64.ActiveCfg = Debug|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|x64.Build.0 = Debug|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|x64.Deploy.0 = Debug|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|x86.ActiveCfg = Debug|x86
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|x86.Build.0 = Debug|x86
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Debug|x86.Deploy.0 = Debug|x86
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|Any CPU.ActiveCfg = Release|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|Any CPU.Build.0 = Release|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|Any CPU.Deploy.0 = Release|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|arm64.ActiveCfg = Release|arm64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|arm64.Build.0 = Release|arm64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|arm64.Deploy.0 = Release|arm64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|x64.ActiveCfg = Release|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|x64.Build.0 = Release|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|x64.Deploy.0 = Release|x64
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|x86.ActiveCfg = Release|x86
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|x86.Build.0 = Release|x86
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{085820C8-CAAB-46E0-93F2-17FB278B2876} = {E8B5F0B0-51FF-4EF4-9118-2E65155A3ED9}
+		{8F39F7EF-BF97-4FCD-BCA6-11356A6476F1} = {E8B5F0B0-51FF-4EF4-9118-2E65155A3ED9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {373782CB-B4FF-4420-8D64-3850DF91D7C0}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		IWO_immutablelist_bug\IWO_immutablelist_bug.Shared\IWO_immutablelist_bug.Shared.projitems*{085820c8-caab-46e0-93f2-17fb278b2876}*SharedItemsImports = 5
+		IWO_immutablelist_bug\IWO_immutablelist_bug.Shared\IWO_immutablelist_bug.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		IWO_immutablelist_bug\IWO_immutablelist_bug.Shared\IWO_immutablelist_bug.Shared.projitems*{8f39f7ef-bf97-4fcd-bca6-11356a6476f1}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

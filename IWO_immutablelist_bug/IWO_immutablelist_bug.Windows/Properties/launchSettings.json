@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "IWO_immutablelist_bug.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
