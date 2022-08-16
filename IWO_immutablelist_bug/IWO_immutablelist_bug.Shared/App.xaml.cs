@@ -1,33 +1,50 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using System;
+using Uno.Extensions;
+using Uno.Extensions.Configuration;
+using Uno.Extensions.Hosting;
+using Uno.Extensions.Navigation;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 
 namespace IWO_immutablelist_bug
 {
-    /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
-    /// </summary>
     public sealed partial class App : Application
     {
         private Window _window;
 
-        /// <summary>
-        /// Initializes the singleton application object.  This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
-        /// </summary>
+        public IHost Host { get; }
+
         public App()
         {
-            InitializeLogging();
+            Host = UnoHost
+                .CreateDefaultBuilder()
+#if DEBUG
+                .UseEnvironment(Environments.Development)
+#endif
+                .UseConfiguration(configure: configBuilder =>
+                    configBuilder
+                    .EmbeddedSource<App>()
+                    .Section<Options>())
+
+                .UseNavigation(RegisterRoutes)
+
+                .Build();
 
             this.InitializeComponent();
 
 #if HAS_UNO || NETFX_CORE
             this.Suspending += OnSuspending;
 #endif
+        }
+        private static void RegisterRoutes(IViewRegistry views, IRouteRegistry routes)
+        {
+            views.Register(
+                new ViewMap<MainPage, ViewModel>());
         }
 
         /// <summary>

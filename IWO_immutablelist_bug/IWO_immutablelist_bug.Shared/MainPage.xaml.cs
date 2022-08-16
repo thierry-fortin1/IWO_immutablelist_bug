@@ -1,5 +1,6 @@
 ﻿using Microsoft.UI.Xaml.Controls;
 using System.Threading.Tasks;
+using Uno.Extensions;
 using Uno.Extensions.Configuration;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -10,8 +11,8 @@ namespace IWO_immutablelist_bug
     {
         public MainPage()
         {
-            this.InitializeComponent();
-            DataContext = new ViewModel.BindableViewModel();
+            InitializeComponent();
+            DataContext = new ViewModel.BindableViewModel(((App)App.Current).Host.Get<IWritableOptions<Options>>());
         }
     }
 }
